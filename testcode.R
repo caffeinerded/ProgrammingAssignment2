@@ -1,5 +1,5 @@
 # Test your code
-##source("cachematrix.R")
+source("C:/Users/rjakubo9/Documents/books/RClass/Assignment/ProgrammingAssignment2/cachematrix.R")
 #
 # generate matrix, and the inverse of the matrix.
 size <- 1000 # size of the matrix edge, don't make this too big

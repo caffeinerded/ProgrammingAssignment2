@@ -29,11 +29,14 @@ cacheSolve <- function(x, ...)
   {
   ## Return a matrix that is the inverse of 'x'
   mat_val <- x$get_inv()
+  ## if mat_val exists in the environment use it
   if(!is.null(mat_val)) 
     {
     message("getting cached data")
+    ## explicitly calling return jumps out of the function
     return(mat_val)
     }
+  ## if mat_val doesn't exists in the environment calculate the inverse matrix
   my_data <- x$get()
   ## Computing the inverse of a square matrix can be done with the solve function in R.
   ## Example, if X is a square invertible matrix, then solve(X) returns its inverse.
